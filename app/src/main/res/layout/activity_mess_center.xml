@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.hzquser.view.activity.MessCenterActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+    <LinearLayout
+        android:id="@+id/ll_sysmess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <ImageView
+            style="@style/Item_pic_size"
+            android:src="@mipmap/icon_xiaoxia"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/text_style_13"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="系统消息"
+            android:layout_marginLeft="8dp"
+            />
+            <TextView
+                android:id="@+id/tv_sysnum"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_mess_num"
+                />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            style="@style/Item_pic_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_wdjiantou" />
+    </LinearLayout>
+        <View
+            style="@style/halvingline"
+            />
+<LinearLayout
+        android:id="@+id/ll_ordermess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <ImageView
+            style="@style/Item_pic_size2"
+            android:src="@mipmap/icon_xiaoxib"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_gravity="center_vertical"
+            style="@style/text_style_13"
+            android:layout_width="0dp"
+            android:text="订单消息"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            />
+
+    <TextView
+        android:id="@+id/tv_ordnum"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_mess_num"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+
+    <ImageView
+            style="@style/Item_pic_size2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_wdjiantou"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <View
+        style="@style/halvingline"
+        />
+
+
+
+    <LinearLayout
+            android:id="@+id/ll_meal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/Item_pic_size2"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_xiaoxid" />
+
+        <TextView
+                style="@style/text_style_13"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+                android:text="领餐消息" />
+        <TextView
+
+            android:id="@+id/tv_getnum"
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textSize="8sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_mess_num"
+            />
+        <ImageView
+                style="@style/Item_pic_size2"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_wdjiantou" />
+        </LinearLayout>
+
+    <View
+        style="@style/halvingline"
+        />
+</LinearLayout>

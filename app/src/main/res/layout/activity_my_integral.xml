@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.hzquser.view.activity.MyIntegralActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEF9F6"
+            >
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/icon_jifen"
+                android:layout_centerInParent="true"
+                >
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="5dp"
+                    >
+                    <TextView
+                       style="@style/text_style_12"
+                        android:text="可用积分"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                       style="@style/text_style_15"
+                        android:id="@+id/tv_money"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tb_layout"
+        android:layout_width="match_parent"
+        app:tabSelectedTextColor="@color/orange"
+        app:tabTextColor="@color/black_color"
+        android:layout_height="wrap_content">
+    </android.support.design.widget.TabLayout>
+    <View
+        style="@style/halvingline"
+        />
+    <android.support.v4.view.ViewPager
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_viewpage"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

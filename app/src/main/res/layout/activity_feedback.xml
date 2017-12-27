@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.hzquser.view.activity.FeedbackActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_etitext"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape_dese_line"
+        android:layout_margin="10dp"
+        >
+        <EditText
+            android:id="@+id/et_text"
+            style="@style/text_style_13"
+            android:padding="5dp"
+            android:hint="输入您的宝贵意见..."
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/Button_small"
+            android:text="提交"
+            android:layout_gravity="center_horizontal"
+            />
+</LinearLayout>

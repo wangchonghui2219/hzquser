@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.hzquser.view.fragment.MealFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50px"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="领餐码"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black_color"
+        android:textSize="20sp"
+        />
+    <View
+        style="@style/halvingline"
+        />
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

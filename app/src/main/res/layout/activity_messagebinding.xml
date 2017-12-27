@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.dlwx.hzquser.view.activity.MessagebindingActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            style="@style/Item_pic_size"
+            android:src="@mipmap/icon_szbangding" />
+
+        <TextView
+            style="@style/text_style_13"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spacebetween"
+            android:layout_weight="1"
+            android:text="绑定手机号" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            style="@style/text_style_13_gary"
+            android:layout_gravity="center_vertical"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            style="@style/Item_pic_size2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_wdjiantou" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            style="@style/Item_pic_size2"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_zhucedizhi" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/text_style_13"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spacebetween"
+            android:layout_weight="1"
+            android:text="请选择您的地址"
+
+            android:padding="5dp"
+
+            />
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/Button_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="保存"
+             />
+</LinearLayout>

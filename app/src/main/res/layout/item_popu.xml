@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <CheckBox
+        android:gravity="center_horizontal"
+        android:id="@+id/btn_type"
+        android:padding="5dp"
+        android:button="@null"
+        android:background="@drawable/selete_check_class"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        />
+</LinearLayout>

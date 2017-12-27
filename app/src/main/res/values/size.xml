@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--控件 间距或,屏幕边缘间距-->
+    <dimen name="spacebetween">5dp</dimen>
+    <!--头部字体大小-->
+    <dimen name="Text_title_Text_size">18sp</dimen>
+    <!--内部小标题-->
+    <dimen name="Text_inside_title">16sp</dimen>
+    <!--内容大小-->
+    <dimen name="Text_inside_size">13sp</dimen>
+    <dimen name="Text_inside_size1">15sp</dimen>
+    <dimen name="Text_inside_size4">15sp</dimen>
+    <dimen name="Text_inside_size2">12sp</dimen>
+    <dimen name="Text_inside_size3">11sp</dimen>
+    <!--小图标，大小-->
+    <dimen name="pic_small_zize">25dp</dimen>
+    <dimen name="pic_small_zize_70">35dp</dimen>
+    <dimen name="pic_small_zize2">20dp</dimen>
+    <dimen name="pic_small_zize3">18dp</dimen>
+    <dimen name="pic_small_zize4">15dp</dimen>
+    <dimen name="pic_size">70dp</dimen>
+    <dimen name="home_class">60dp</dimen>
+    <!--列表图标尺寸-->
+    <dimen name="pic_list_size">25dp</dimen>
+    <dimen name="status_bar_height">25dp</dimen>
+    <dimen name="delete">70dp</dimen>
+</resources>

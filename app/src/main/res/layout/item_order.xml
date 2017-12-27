@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            style="@style/text_style_13"
+            android:id="@+id/tv_order_no"
+            android:layout_weight="1"
+             />
+        <TextView
+            style="@style/text_style_13"
+
+            android:id="@+id/tv_order_type"
+            android:textColor="@color/orange"
+            />
+
+    </LinearLayout>
+    <com.dlwx.hzquser.view.MyListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_list"
+        ></com.dlwx.hzquser.view.MyListView>
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+               style="@style/text_style_13"
+                android:id="@+id/tv_tot_num"
+                />
+                <TextView
+                    android:id="@+id/tv_tota_price"
+                   style="@style/text_style_13"
+                    android:layout_weight="1"
+                    android:textColor="@color/orange"
+                    />
+            <TextView
+               android:id="@+id/tv_time"
+                style="@style/text_style_13"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFE6E5"
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            >
+            <Button
+                android:id="@+id/btn_close"
+               android:layout_width="80dp"
+                android:height="35dp"
+                android:background="@drawable/shap_gary_bg"
+                android:layout_height="35dp"
+                android:text="取消订单"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                />
+            <Button
+                android:id="@+id/btn_payOr"
+                android:layout_marginLeft="10dp"
+                style="@style/Button_rectangle"
+                android:background="@drawable/shap_org_bg"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="付款"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

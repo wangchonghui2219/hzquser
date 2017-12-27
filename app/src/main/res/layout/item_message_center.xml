@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:padding="10dp"
+        style="@style/text_style_13"
+        android:id="@+id/tv_date"
+        android:layout_gravity="center_horizontal"
+        />
+        <View
+            style="@style/halvingline"
+            />
+        <TextView
+           style="@style/text_style_15"
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            />
+        <TextView
+           style="@style/text_style_12"
+            android:id="@+id/tv_count"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            />
+    <View
+        style="@style/halvingline"
+        />
+</LinearLayout>

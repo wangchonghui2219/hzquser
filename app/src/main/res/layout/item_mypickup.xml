@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+           style="@style/text_style_13"
+            android:id="@+id/tv_order_no"
+            android:layout_weight="1"
+            />
+        <TextView
+           style="@style/text_style_12"
+            android:id="@+id/tv_time"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_exen_code"
+                    style="@style/text_style_13"
+                    android:layout_gravity="center_vertical" />
+
+                <ImageView
+                    style="@style/Item_pic_size2"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_canjuan" />
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/text_style_13"
+                     />
+        </LinearLayout>
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        style="@style/halvingline"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingRight="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                android:text="查看详情>>"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shap_org_bg_pick"
+                android:layout_alignParentRight="true"
+                 />
+        </RelativeLayout>
+    <include
+
+        layout="@layout/space_view"
+        />
+</LinearLayout>

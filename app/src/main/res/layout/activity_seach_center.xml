@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.hzquser.view.activity.SeachCenterActivity">
+    <include
+        layout="@layout/tool_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_popu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_tao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+                <TextView
+                android:id="@+id/tv_tao"
+                style="@style/text_style_13"
+                android:text="全部"
+                android:textColor="@color/orange" />
+
+                <ImageView
+                android:id="@+id/iv_tao"
+                style="@style/Item_pic_size4"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_fenlei" />
+        </LinearLayout>
+
+            <View
+                android:id="@+id/view_tao"
+                style="@style/halvingline"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@color/orange" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sale"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_sale"
+                    style="@style/text_style_13"
+                    android:text="销量优先" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_sale"
+                style="@style/halvingline"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/text_style_13"
+                    android:text="价格排序" />
+
+                <ImageView
+                    android:id="@+id/iv_price"
+                    style="@style/Item_pic_size4"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_fenleia" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_price"
+                style="@style/halvingline"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refreshLayout"
+        app:srlEnablePreviewInEditMode="true"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lv_list"
+            android:layout_height="wrap_content"></ListView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

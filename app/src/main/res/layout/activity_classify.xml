@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dlwx.hzquser.view.activity.ClassifyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/icon_hzqbg"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/trans"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:src="@mipmap/icon_shangjia"
+                    style="@style/MyCenter_class"
+                    android:layout_gravity="center_vertical"
+                     />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/tv_name"
+                       style="@style/text_style_13"
+                        android:text="合之奇中式快餐"
+                        android:textColor="@color/white"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_phone"
+                       style="@style/text_style_11"
+                        android:text="电话：18637051978"
+
+                        android:textColor="#F7F8F6"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_address"
+                       style="@style/text_style_11"
+                        android:text="地址：郑州市金水区花园路农科路安华大厦"
+
+                        android:textColor="#F7F8F6"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tb_layout"
+            app:tabSelectedTextColor="@color/orange"
+            app:tabTextColor="@color/black_color"
+            ></android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/vp_viewpage"
+            android:layout_height="match_parent"
+            ></android.support.v4.view.ViewPager>
+</LinearLayout>

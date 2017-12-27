@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dlwx.hzquser.view.fragment.IntegralExplainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_explain"
+       style="@style/text_style_13"
+        android:layout_margin="10dp"
+        android:text="积分可用于订餐时所用"
+        />
+
+</FrameLayout>
